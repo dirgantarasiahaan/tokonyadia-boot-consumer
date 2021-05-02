@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public class PurchaseDto {
 
-    private String emailSender;
+    private String emailTo;
     private String customerName;
     private BigDecimal amount;
 
@@ -12,17 +12,17 @@ public class PurchaseDto {
     }
 
     public PurchaseDto(String emailSender, String customerName, BigDecimal amount) {
-        this.emailSender = emailSender;
+        this.emailTo = emailTo;
         this.customerName = customerName;
         this.amount = amount;
     }
 
-    public String getEmailSender() {
-        return emailSender;
+    public String getEmailTo() {
+        return emailTo;
     }
 
-    public void setEmailSender(String emailSender) {
-        this.emailSender = emailSender;
+    public void setEmailTo(String emailTo) {
+        this.emailTo = emailTo;
     }
 
     public String getCustomerName() {
